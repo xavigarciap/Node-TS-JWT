@@ -1,0 +1,23 @@
+@api = http://localhost:3000
+
+GET {{api}}/special
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGZmOGJmZjkzMjI1MGNmYTRlZmI5OSIsImVtYWlsIjoieGF2aUBlbWFpbC5jb20iLCJpYXQiOjE2NDk2NzI3NDcsImV4cCI6MTY0OTc1OTE0N30.KvjBLX_FQAQ7XphcfgQiylhHUDB2ah8_ds6xn0SLyC0
+
+###
+POST {{api}}/signin
+Content-Type: application/json
+
+{
+    "email": "xavi@email.com",
+    "password": "password"
+}
+
+###
+POST {{api}}/signup
+Content-Type: application/json
+
+{
+    "email": "xavi@email.com",
+    "password": "password"
+}
+
